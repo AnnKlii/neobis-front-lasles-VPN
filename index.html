@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./header.html">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <img src="" alt="">Lasles<span>VPN</span>
+            <img class="logo__image" src="./assets/Icon/logo.svg" alt="logo">Lasles<span>VPN</span>
         </div>
         <div class="header__nav">
             <ul class="header__list">
@@ -24,21 +24,23 @@
             </ul>
         </div>
         <div class="header__login">
-            <a href="">Sign in</a>
+            <a class="header__login-link link" href="">Sign in</a>
             <button class="header__button button-oval">Sign up</button>
         </div>
     </header>
     <main class="main">
-        <section class="main-section">
+        <section class="main-section-row">
             <div class="main-section__about">
-                <div class="main-section__title">Want anything to be easy with LaslesVPN.</div>
-                <div class="main-section__description">Provide a network for all your needs with ease and fun
-                    using LaslesVPN discover interesting features from us.</div>
+                <h1 class="main-section__title">Want anything to be easy with <span>LaslesVPN.</span></h1>
+                <p class="main-section__description">Provide a network for all your needs with ease and fun
+                    using LaslesVPN discover interesting features from us.</p>
                 <div class="main-section__button">
                     <button class="button-rectangle">Get started</button>
                 </div>
             </div>
-            <div class="main-section__image"></div>
+            <div class="main-section__image">
+                <img src="./assets/Illustration/Illustration1.svg" alt="Illustration1">
+            </div>
 
         </section>
         <section class="little-section rating">
@@ -59,11 +61,14 @@
             </div>
 
         </section>
-        <section class="main-section">
+        <section class="main-section-row">
+            <div class="main-section__image">
+                <img src="./assets/Illustration/Illustration2.svg" alt="">
+            </div>
             <div class="features">
-                <div class="main-section__title">We Provide Many Features You Can Use</div>
-                <div class="main-section__description">You can explore the features that we provide with fun and have
-                    their own functions each feature.</div>
+                <h2 class="main-section__title">We Provide Many Features You Can Use</h2>
+                <p class="main-section__description">You can explore the features that we provide with fun and have
+                    their own functions each feature.</p>
                 <div class="main-section__list">
                     <ul>
                         <li class="features__item">Powerfull online protection.</li>
@@ -73,16 +78,16 @@
                     </ul>
                 </div>
             </div>
-            <div class="main-section__image"></div>
-        </section>
-        <section class="main-section">
 
-            <div class="main-section__title">Choose Your Plan</div>
-            <div class="main-section__description">Let's choose the package that is best for you and explore it happily
-                and cheerfully.</div>
+        </section>
+        <section class="main-section-column">
+
+            <h2 class="main-section__title">Choose Your Plan</h2>
+            <p class="main-section__description">Let's choose the package that is best for you and explore it happily
+                and cheerfully.</p>
             <div class="pricing">
                 <div class="pricing__tarif">
-                    <img src="" alt="">
+                    <img src="./assets/Illustration/Free.svg" alt="">
                     <ul class="pricing__tarif-title">Free Plan
                         <li class="pricing__tarif-item">Unlimited Bandwitch</li>
                         <li class="pricing__tarif-item">Encrypted Connection</li>
@@ -93,7 +98,7 @@
                     <button class="pricing__tarif-price button-oval">Select</button>
                 </div>
                 <div class="pricing__tarif">
-                    <img src="" alt="">
+                    <img src="./assets/Illustration/Standard.svg" alt="">
                     <ul class="pricing__tarif-title">
                         <li class="pricing__tarif-item">Unlimited Bandwitch</li>
                         <li class="pricing__tarif-item">Encrypted Connection</li>
@@ -105,7 +110,7 @@
                     <button class="pricing__tarif-price button-oval">Select</button>
                 </div>
                 <div class="pricing__tarif">
-                    <img src="" alt="">
+                    <img src="./assets/Illustration/Premium.svg" alt="">
                     <ul class="pricing__tarif-title">Premium Plan
                         <li class="pricing__tarif-item">Unlimited Bandwitch</li>
                         <li class="pricing__tarif-item">Encrypted Connection</li>
@@ -121,21 +126,23 @@
             </div>
 
         </section>
-        <section class="main-section">
-            <div>
-                <div class="main-section__title">Huge Global Network of Fast VPN</div>
-                <div class="main-section__description">See LaslesVPN everywhere to make it easier for you when you move
-                    locations.</div>
-                <img src="" alt="">
-            </div>
+        <section class="main-section-column">
+            <h2 class="main-section__title">Huge Global Network of Fast VPN</h2>
+            <p class="main-section__description">See LaslesVPN everywhere to make it easier for you when you move
+                locations.</p>
+            <img src="./assets/Illustration/HugeGlobal.svg" alt="">
         </section>
         <section class="little-section sponsored">
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+            <img src="./assets/Mask Group.svg" alt="">
+            <img src="./assets/Mask Group (1).svg" alt="">
+            <img src="./assets/Mask Group (2).svg" alt="">
+            <img src="./assets/Mask Group (3).svg" alt="">
+            <img src="./assets/Mask Group (4).svg" alt="">
         </section>
-        <section class="main-section reviews">
-            <div class="main-section__title">Trusted by Thousands of Happy Customer</div>
-            <div class="main-section__description">These are the stories of our customers who have joined us with great
-                pleasure when using this crazy feature.</div>
+        <section class="main-section-column">
+            <h2 class="main-section__title">Trusted by Thousands of Happy Customer</h2>
+            <p class="main-section__description">These are the stories of our customers who have joined us with great
+                pleasure when using this crazy feature.</p>
             <div class="reviews-blocks">
                 <div class="reviews-blocks__block">
                     <img src="" alt="">
@@ -190,33 +197,33 @@
             </div>
             <div class="footer__copyright">&copy;2020LaslesVPN</div>
         </div>
-        <div>
-            <ul class="footer__nav">
-                <li class="footer__link-block">Product</li>
-                <ul class="footer__submenu">
-                    <li class="footer__submenu-item">Download</li>
-                    <li class="footer__submenu-item">Pricing</li>
-                    <li class="footer__submenu-item">Locations</li>
-                    <li class="footer__submenu-item">Server</li>
-                    <li class="footer__submenu-item">Countries</li>
-                    <li class="footer__submenu-item">Blog</li>
-                </ul>
-                <li class="footer__link-block">Engage</li>
-                <ul class="footer__submenu">
-                    <li class="footer__submenu-item">LaslesVPN ?</li>
-                    <li class="footer__submenu-item">FAQ</li>
-                    <li class="footer__submenu-item">Tutorials</li>
-                    <li class="footer__submenu-item">About us</li>
-                    <li class="footer__submenu-item">Countries</li>
-                    <li class="footer__submenu-item">Blog</li>
-                </ul>
-                <li class="footer__link-block">Earn Money</li>
-                <ul class="footer__submenu">
-                    <li class="footer__submenu-item">Affiliate</li>
-                    <li class="footer__submenu-item">Become Partner</li>
-                </ul>
+
+        <ul class="footer__nav">
+            <li class="footer__link-block">Product</li>
+            <ul class="footer__submenu">
+                <li class="footer__submenu-item">Download</li>
+                <li class="footer__submenu-item">Pricing</li>
+                <li class="footer__submenu-item">Locations</li>
+                <li class="footer__submenu-item">Server</li>
+                <li class="footer__submenu-item">Countries</li>
+                <li class="footer__submenu-item">Blog</li>
             </ul>
-        </div>
+            <li class="footer__link-block">Engage</li>
+            <ul class="footer__submenu">
+                <li class="footer__submenu-item">LaslesVPN ?</li>
+                <li class="footer__submenu-item">FAQ</li>
+                <li class="footer__submenu-item">Tutorials</li>
+                <li class="footer__submenu-item">About us</li>
+                <li class="footer__submenu-item">Countries</li>
+                <li class="footer__submenu-item">Blog</li>
+            </ul>
+            <li class="footer__link-block">Earn Money</li>
+            <ul class="footer__submenu">
+                <li class="footer__submenu-item">Affiliate</li>
+                <li class="footer__submenu-item">Become Partner</li>
+            </ul>
+        </ul>
+
     </footer>
 </body>
 

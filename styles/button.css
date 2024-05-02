@@ -1,0 +1,16 @@
+.button-oval {
+    width: 150px;
+    height: 45px;
+    border: 1px #F53855 solid;
+    border-radius: 50px;
+    color: #F53855;
+}
+
+.button-rectangle {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px #F53838 solid;
+    background-color: #F53838;
+    color: white;
+}
