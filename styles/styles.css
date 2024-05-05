@@ -65,7 +65,7 @@ span {
   cursor: pointer;
 }
 
-.button-oval_activ {
+.button-oval:hover {
   background-color: #F53838;
   color: white;
   box-shadow: 0px 30px 40px 0px rgba(245, 56, 56, 0.3490196078);
@@ -245,7 +245,7 @@ span {
   text-align: center;
   background: white;
 }
-.pricing-section__tarif_active {
+.pricing-section__tarif:hover {
   border: 2px solid #F53838;
 }
 .pricing-section__tarif-title {
@@ -292,7 +292,7 @@ span {
   border-radius: 10px;
   padding: 30px;
 }
-.review-blocks__block_active {
+.review-blocks__block:hover {
   border-color: #F53838;
   box-shadow: 0px 50px 80px -3px rgba(13, 16, 37, 0.1019607843);
 }
@@ -378,6 +378,7 @@ span {
 }
 .footer__submenu {
   gap: 10px;
+  cursor: pointer;
 }
 .footer__link-title {
   margin-bottom: 20px;

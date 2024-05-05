@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.button-oval_activ {
+.button-oval:hover {
     background-color: $buttonColor ;
     color: $textButtonColor;
     box-shadow: 0px 30px 40px 0px $shadowRedColor;
