@@ -15,6 +15,10 @@
 
         & a {
             color: $mainColor;
+
+            &:hover {
+                color: $buttonColor;
+            }
         }
     }
 
@@ -22,6 +26,10 @@
         margin-right: 2.5rem;
         color: $titleColor;
         font-weight: 500;
+
+        &:hover {
+            color: $buttonColor;
+        }
     }
 }
 
@@ -299,14 +307,16 @@
     }
 }
 
-.little-section-subscribe {
-    padding: 4.38rem;
-    // gap: 25%;
+.subscribe-gradient {
+    margin: 0 -150px;
+    background: linear-gradient(180deg, #ffffff, #ffffff 125px, $footerColor 125px, $footerColor 250px);
+}
 
+.little-section-subscribe {
+    margin: 0 150px;
+    padding: 4.38rem;
     border-radius: 10px;
     background-color: white;
-    margin-bottom: -7.25rem;
-
 }
 
 .little-section-buttons {
@@ -328,10 +338,8 @@
 .footer {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 11.25rem 9.38rem 6.25rem 9.38rem;
+    padding: 4rem 9.38rem 6.25rem 9.38rem;
     background-color: $footerColor;
-    position: relative;
-    z-index: -1;
 
     &__info {
         display: flex;
@@ -346,7 +354,15 @@
 
     &__submenu {
         gap: 10px;
-        cursor: pointer;
+
+        &-item {
+            cursor: pointer;
+        }
+
+        &-item:hover {
+            color: $buttonColor;
+
+        }
     }
 
     &__link-title {
