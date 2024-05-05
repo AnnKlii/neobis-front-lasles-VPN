@@ -1,13 +1,13 @@
-@import "variables.scss";
-@import "common.scss";
-@import "button.scss";
+@import "_variables.scss";
+@import "_common.scss";
+@import "_button.scss";
 
 .header {
     display: flex;
     justify-content: space-between;
 
     &__list {
-        width: 451px;
+        width: 28.19rem;
         display: flex;
         justify-content: space-between;
         margin-top: 8.62px;
@@ -19,7 +19,7 @@
     }
 
     &__login-link {
-        margin-right: 40px;
+        margin-right: 2.5rem;
         color: $titleColor;
         font-weight: 500;
     }
@@ -28,7 +28,7 @@
 .logo {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     color: $titleColor;
 
@@ -46,7 +46,7 @@
 }
 
 .main-section {
-    margin-top: 89px;
+    margin-top: 5.56rem;
 
     &__title {
         color: $titleColor;
@@ -54,15 +54,15 @@
 
     &__description {
         font-weight: 400;
-        line-height: 30px;
+        line-height: 1.88rem;
     }
 
     &__button {
-        margin-top: 30px;
+        margin-top: 1.88rem;
     }
 
     &__image {
-        margin-left: 40px;
+        margin-left: 2.5rem;
     }
 }
 
@@ -72,9 +72,9 @@
     &__block {
         display: flex;
         flex-direction: column;
-        width: 555px;
-        gap: 20px;
-        margin-top: 27px;
+        width: 34.69rem;
+        gap: 1.25rem;
+        margin-top: 1.69rem;
     }
 }
 
@@ -85,7 +85,7 @@
 
     &__title {
         color: $titleColor;
-        margin: 0 86px;
+        margin: 0 5.38rem;
         text-align: center;
     }
 
@@ -93,14 +93,14 @@
         text-align: center;
         align-items: center;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 1.88rem;
     }
 
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 555px;
+        width: 34.69rem;
     }
 }
 
@@ -110,33 +110,33 @@
     align-items: center;
 
     &__title {
-        font-size: 35px;
+        font-size: 2.19rem;
         font-weight: 500;
-        line-height: 45px;
+        line-height: 2.81rem;
         color: $titleColor;
     }
 }
 
 .rating-section {
-    margin-top: 103px;
-    padding: 67px 91px 68px 91px;
+    margin-top: 6.44rem;
+    padding: 4.19rem 5.69rem 4.19rem 5.69rem;
     border: 1px solid white;
     border-radius: 10px;
-    box-shadow: 0px 50px 80px -3px $shadowBlackColor;
+    box-shadow: 0px 3.13rem 5rem -3px $shadowBlackColor;
 
     &__item {
         display: flex;
         align-items: center;
-        gap: 36px;
+        gap: 2.25rem;
 
         & p:first-child {
-            font-size: 25px;
+            font-size: 1.56rem;
             font-weight: 700;
             color: $titleColor;
         }
 
         & p:last-child {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 400;
         }
     }
@@ -144,13 +144,13 @@
 }
 
 .features-section {
-    margin-top: 150px;
-    gap: 170px;
+    margin-top: 9.38rem;
+    gap: 10.63rem;
 
     &__item {
         display: flex;
         gap: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
 
         &::before {
             content: url(../assets/Icon/greenCircle.svg);
@@ -160,29 +160,29 @@
 }
 
 .gradient {
-    margin: 60px -150px 0 -150px;
-    padding-top: 100px;
-    background: linear-gradient(180deg, #FAFAFA, #FAFAFA 50px, #FBFBFB 50px, #FBFBFB 450px, #FCFCFC 450px, #FCFCFC 850px, #FDFDFD 850px, #FDFDFD 1250px, #FFFFFF 1250px);
+    margin: 3.75rem -9.38rem 0 -9.38rem;
+    padding-top: 6.25rem;
+    background: linear-gradient(180deg, #FAFAFA, #FAFAFA 3.13rem, #FBFBFB 3.13rem, #FBFBFB 28.13rem, #FCFCFC 28.13rem, #FCFCFC 53.13rem, #FDFDFD 53.13rem, #FDFDFD 78.13rem, #FFFFFF 78.13rem);
 }
 
 .pricing-section {
 
     &__block {
         display: flex;
-        margin-top: 60px;
-        gap: 50px;
+        margin-top: 3.75rem;
+        gap: 3.13rem;
 
     }
 
     &__button {
-        margin: 20px 0 50px 0;
+        margin: 1.25rem 0 3.13rem 0;
     }
 
     &__tarif {
-        padding: 80px 60px 0 70px;
+        padding: 5rem 3.75rem 0 4.38rem;
         border: 2px solid $borderColor;
         border-radius: 10px;
-        gap: 20px;
+        gap: 1.25rem;
         text-align: center;
         background: white;
 
@@ -191,30 +191,30 @@
         }
 
         &-title {
-            margin: 30px 0;
+            margin: 1.88rem 0;
         }
 
         &-list {
             text-align: start;
-            height: 230px;
+            height: 14.38rem;
         }
 
         &-price {
-            font-size: 25px;
+            font-size: 1.56rem;
             font-weight: 400;
             color: $titleColor;
-            margin-top: 50px;
+            margin-top: 3.13rem;
         }
 
 
 
         &-item {
-            font-size: 14px;
+            font-size: 0.88rem;
             display: flex;
 
             &::before {
                 content: url(../assets/Icon/greenTick.svg);
-                margin-right: 20px;
+                margin-right: 1.25rem;
             }
         }
     }
@@ -222,39 +222,39 @@
 
 
 .huge-global-section {
-    margin: 150px 0;
+    margin: 9.38rem 0;
 }
 
 .review-section {
-    margin: 20px 0;
+    margin: 1.25rem 0;
 
     &title {
-        width: 448px;
+        width: 28rem;
     }
 }
 
 .review-blocks {
     display: flex;
-    gap: 50px;
-    margin-top: 30px;
-    margin-left: 150px;
+    gap: 3.13rem;
+    margin-top: 1.88rem;
+    margin-left: 9.38rem;
 
     &__block {
         border: 2px solid $borderColor;
         border-radius: 10px;
-        padding: 30px;
+        padding: 1.88rem;
 
         &:hover {
             border-color: $buttonColor ;
-            box-shadow: 0px 50px 80px -3px $shadowBlackColor;
+            box-shadow: 0px 3.13rem 5rem -3px $shadowBlackColor;
         }
     }
 
     &__info {
         display: grid;
-        column-gap: 20px;
-        padding-bottom: 30px;
-        grid-template-columns: 50px 142px 30px 50px;
+        column-gap: 1.25rem;
+        padding-bottom: 1.88rem;
+        grid-template-columns: 3.13rem 8.88rem 1.88rem 3.13rem;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "img nm . rt"
             "img lc . rt";
@@ -266,8 +266,8 @@
     }
 
     &__name {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 1.13rem;
+        line-height: 1.88rem;
         font-weight: 500;
         color: $titleColor;
         grid-area: nm;
@@ -275,8 +275,8 @@
     }
 
     &__location {
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 0.88rem;
+        line-height: 1.88rem;
         font-weight: 400;
         grid-area: lc;
         margin-top: -5px;
@@ -295,52 +295,53 @@
     }
 
     &__text {
-        line-height: 30px;
+        line-height: 1.88rem;
     }
 }
 
 .little-section-subscribe {
-    padding: 70px;
-    gap: 340px;
+    padding: 4.38rem;
+    // gap: 25%;
+
     border-radius: 10px;
     background-color: white;
-    position: absolute;
-    top: 280em;
+    margin-bottom: -7.25rem;
 
 }
 
 .little-section-buttons {
     display: flex;
     justify-content: space-between;
-    margin: 60px 0 180px 0;
+    margin: 3.75rem 0 4.06rem 0;
 
     &__left {
         display: flex;
-        gap: 15px;
+        gap: 0.94rem;
     }
 
     &__right {
         display: flex;
-        gap: 30px;
+        gap: 1.88rem;
     }
 }
 
 .footer {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 180px 150px 100px 150px;
+    padding: 11.25rem 9.38rem 6.25rem 9.38rem;
     background-color: $footerColor;
+    position: relative;
+    z-index: -1;
 
     &__info {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     &__nav {
         display: flex;
         justify-content: space-between;
-
     }
 
     &__submenu {
@@ -349,7 +350,7 @@
     }
 
     &__link-title {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     &__copyright {

@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "_variables.scss";
 
 * {
     padding: 0px;
@@ -9,7 +9,7 @@
 body {
     font-family: "Rubik", sans-serif;
     color: $mainColor;
-    line-height: 30px;
+    line-height: 1.88rem;
     font-size: 16px;
     font-weight: 400;
 }
@@ -20,7 +20,7 @@ button {
 
 .header,
 .main-section {
-    margin: 50px 150px 0 150px;
+    margin: 3.13rem 9.38rem 0 9.38rem;
 }
 
 .list {
@@ -28,19 +28,19 @@ button {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3.13rem;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 4.38rem;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 2.19rem;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 3.13rem;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1.13rem;
     font-weight: 500;
     color: $titleColor;
 
