@@ -9,6 +9,9 @@
 body {
     font-family: "Rubik", sans-serif;
     color: $mainColor;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 button {
@@ -36,7 +39,18 @@ h2 {
     line-height: 50px;
 }
 
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: $titleColor;
+
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+span {
+    font-weight: 500;
 }

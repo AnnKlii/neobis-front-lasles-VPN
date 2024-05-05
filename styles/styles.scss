@@ -12,10 +12,16 @@
         justify-content: space-between;
         margin-top: 8.62px;
         font-weight: 400;
+
+        & a {
+            color: $mainColor;
+        }
     }
 
     &__login-link {
         margin-right: 40px;
+        color: $titleColor;
+        font-weight: 500;
     }
 }
 
@@ -101,6 +107,7 @@
 .little-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &__title {
         font-size: 35px;
@@ -112,6 +119,7 @@
 
 .rating-section {
     margin-top: 103px;
+    padding: 67px 91px 68px 91px;
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0px 50px 80px -3px $shadowBlackColor;
@@ -119,19 +127,17 @@
     &__item {
         display: flex;
         align-items: center;
-        padding: 67px 91px 68px 91px;
         gap: 36px;
 
         & p:first-child {
             font-size: 25px;
             font-weight: 700;
-            line-height: 30px;
+            color: $titleColor;
         }
 
         & p:last-child {
             font-size: 20px;
             font-weight: 400;
-            line-height: 30px;
         }
     }
 
@@ -143,25 +149,29 @@
 
     &__item {
         display: flex;
-        align-items: center;
         gap: 10px;
         margin-bottom: 15px;
 
         &::before {
             content: url(../assets/Icon/greenCircle.svg);
             align-self: center;
-
         }
     }
 }
 
+.gradient {
+    margin: 60px -150px 0 -150px;
+    padding-top: 100px;
+    background: linear-gradient(180deg, #FAFAFA, #FAFAFA 50px, #FBFBFB 50px, #FBFBFB 450px, #FCFCFC 450px, #FCFCFC 850px, #FDFDFD 850px, #FDFDFD 1250px, #FFFFFF 1250px);
+}
+
 .pricing-section {
-    margin-top: 60px;
 
     &__block {
         display: flex;
         margin-top: 60px;
         gap: 50px;
+
     }
 
     &__button {
@@ -174,12 +184,14 @@
         border-radius: 10px;
         gap: 20px;
         text-align: center;
+        background: white;
+
+        &_active {
+            border: 2px solid $buttonColor;
+        }
 
         &-title {
             margin: 30px 0;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 30px;
         }
 
         &-list {
@@ -189,25 +201,20 @@
 
         &-price {
             font-size: 25px;
-            font-weight: 500;
-            line-height: 30px;
-
-            & span {
-                font-weight: 400;
-            }
+            font-weight: 400;
+            color: $titleColor;
+            margin-top: 50px;
         }
 
-        &_active {
-            border: 2px solid $buttonColor;
-        }
+
 
         &-item {
             font-size: 14px;
+            display: flex;
 
             &::before {
                 content: url(../assets/Icon/greenTick.svg);
                 margin-right: 20px;
-
             }
         }
     }
@@ -298,7 +305,7 @@
     border-radius: 10px;
     background-color: white;
     position: absolute;
-    top: 258em;
+    top: 280em;
 
 }
 
@@ -319,11 +326,31 @@
 }
 
 .footer {
-    display: flex;
-    padding: 180px 150px 0 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 180px 150px 100px 150px;
     background-color: $footerColor;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     &__nav {
         display: flex;
+        justify-content: space-between;
+    }
+
+    &__submenu {
+        gap: 10px;
+    }
+
+    &__link-title {
+        margin-bottom: 20px;
+    }
+
+    &__copyright {
+        color: $copyrightColor;
     }
 }

@@ -7,6 +7,9 @@
 body {
   font-family: "Rubik", sans-serif;
   color: #4F5665;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 button {
@@ -34,9 +37,19 @@ h2 {
   line-height: 50px;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0B132A;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+span {
+  font-weight: 500;
 }
 
 .button-oval {
@@ -83,8 +96,13 @@ a {
   margin-top: 8.62px;
   font-weight: 400;
 }
+.header__list a {
+  color: #4F5665;
+}
 .header__login-link {
   margin-right: 40px;
+  color: #0B132A;
+  font-weight: 500;
 }
 
 .logo {
@@ -160,6 +178,7 @@ a {
 .little-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .little-section__title {
   font-size: 35px;
@@ -170,6 +189,7 @@ a {
 
 .rating-section {
   margin-top: 103px;
+  padding: 67px 91px 68px 91px;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0px 50px 80px -3px rgba(13, 16, 37, 0.1019607843);
@@ -177,18 +197,16 @@ a {
 .rating-section__item {
   display: flex;
   align-items: center;
-  padding: 67px 91px 68px 91px;
   gap: 36px;
 }
 .rating-section__item p:first-child {
   font-size: 25px;
   font-weight: 700;
-  line-height: 30px;
+  color: #0B132A;
 }
 .rating-section__item p:last-child {
   font-size: 20px;
   font-weight: 400;
-  line-height: 30px;
 }
 
 .features-section {
@@ -197,7 +215,6 @@ a {
 }
 .features-section__item {
   display: flex;
-  align-items: center;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -206,9 +223,12 @@ a {
   align-self: center;
 }
 
-.pricing-section {
-  margin-top: 60px;
+.gradient {
+  margin: 60px -150px 0 -150px;
+  padding-top: 100px;
+  background: linear-gradient(180deg, #FAFAFA, #FAFAFA 50px, #FBFBFB 50px, #FBFBFB 450px, #FCFCFC 450px, #FCFCFC 850px, #FDFDFD 850px, #FDFDFD 1250px, #FFFFFF 1250px);
 }
+
 .pricing-section__block {
   display: flex;
   margin-top: 60px;
@@ -223,12 +243,13 @@ a {
   border-radius: 10px;
   gap: 20px;
   text-align: center;
+  background: white;
+}
+.pricing-section__tarif_active {
+  border: 2px solid #F53838;
 }
 .pricing-section__tarif-title {
   margin: 30px 0;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
 }
 .pricing-section__tarif-list {
   text-align: start;
@@ -236,17 +257,13 @@ a {
 }
 .pricing-section__tarif-price {
   font-size: 25px;
-  font-weight: 500;
-  line-height: 30px;
-}
-.pricing-section__tarif-price span {
   font-weight: 400;
-}
-.pricing-section__tarif_active {
-  border: 2px solid #F53838;
+  color: #0B132A;
+  margin-top: 50px;
 }
 .pricing-section__tarif-item {
   font-size: 14px;
+  display: flex;
 }
 .pricing-section__tarif-item::before {
   content: url(../assets/Icon/greenTick.svg);
@@ -327,7 +344,7 @@ a {
   border-radius: 10px;
   background-color: white;
   position: absolute;
-  top: 258em;
+  top: 280em;
 }
 
 .little-section-buttons {
@@ -345,10 +362,26 @@ a {
 }
 
 .footer {
-  display: flex;
-  padding: 180px 150px 0 150px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 180px 150px 100px 150px;
   background-color: #F8F8F8;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .footer__nav {
   display: flex;
+  justify-content: space-between;
+}
+.footer__submenu {
+  gap: 10px;
+}
+.footer__link-title {
+  margin-bottom: 20px;
+}
+.footer__copyright {
+  color: #AFB5C0;
 }/*# sourceMappingURL=styles.css.map */
