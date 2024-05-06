@@ -7,7 +7,7 @@
     justify-content: space-between;
 
     &__list {
-        width: 28.19rem;
+        width: 28vw;
         display: flex;
         justify-content: space-between;
         margin-top: 8.62px;
@@ -54,7 +54,7 @@
 }
 
 .main-section {
-    margin-top: 5.56rem;
+    margin-top: 7vw;
 
     &__title {
         color: $titleColor;
@@ -127,7 +127,7 @@
 
 .rating-section {
     margin-top: 6.44rem;
-    padding: 4.19rem 5.69rem 4.19rem 5.69rem;
+    padding: 4vw 5vw 4vw 5vw;
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0px 3.13rem 5rem -3px $shadowBlackColor;
@@ -152,8 +152,8 @@
 }
 
 .features-section {
-    margin-top: 9.38rem;
-    gap: 10.63rem;
+    margin-top: 7vw;
+    gap: 10vw;
 
     &__item {
         display: flex;
@@ -168,8 +168,8 @@
 }
 
 .gradient {
-    margin: 3.75rem -9.38rem 0 -9.38rem;
-    padding-top: 6.25rem;
+    margin: 4vw -9vw 0 -9vw;
+    padding-top: 6vw;
     background: linear-gradient(180deg, #FAFAFA, #FAFAFA 3.13rem, #FBFBFB 3.13rem, #FBFBFB 28.13rem, #FCFCFC 28.13rem, #FCFCFC 53.13rem, #FDFDFD 53.13rem, #FDFDFD 78.13rem, #FFFFFF 78.13rem);
 }
 
@@ -178,7 +178,7 @@
     &__block {
         display: flex;
         margin-top: 3.75rem;
-        gap: 3.13rem;
+        gap: 3vw;
 
     }
 
@@ -187,7 +187,7 @@
     }
 
     &__tarif {
-        padding: 5rem 3.75rem 0 4.38rem;
+        padding: 5vw 4vw 0 4vw;
         border: 2px solid $borderColor;
         border-radius: 10px;
         gap: 1.25rem;
@@ -230,8 +230,9 @@
 
 
 .huge-global-section {
-    margin: 9.38rem 0;
+    margin: 9vw 0;
 }
+
 
 .review-section {
     margin: 1.25rem 0;
@@ -243,9 +244,9 @@
 
 .review-blocks {
     display: flex;
-    gap: 3.13rem;
-    margin-top: 1.88rem;
-    margin-left: 9.38rem;
+    gap: 3vw;
+    margin-top: 2vw;
+    // margin-left: 8vw;
 
     &__block {
         border: 2px solid $borderColor;
@@ -262,7 +263,7 @@
         display: grid;
         column-gap: 1.25rem;
         padding-bottom: 1.88rem;
-        grid-template-columns: 3.13rem 8.88rem 1.88rem 3.13rem;
+        grid-template-columns: 3vw 9vw 2vw 3vw;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "img nm . rt"
             "img lc . rt";
@@ -308,12 +309,12 @@
 }
 
 .subscribe-gradient {
-    margin: 0 -150px;
-    background: linear-gradient(180deg, #ffffff, #ffffff 125px, $footerColor 125px, $footerColor 250px);
+    margin: 0 -9vw;
+    background: linear-gradient(180deg, #ffffff, #ffffff 7.8rem, $footerColor 7.8rem, $footerColor 15.6rem);
 }
 
 .little-section-subscribe {
-    margin: 0 150px;
+    margin: 0 9vw;
     padding: 4.38rem;
     border-radius: 10px;
     background-color: white;
@@ -338,7 +339,7 @@
 .footer {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 4rem 9.38rem 6.25rem 9.38rem;
+    padding: 4vw 9vw 6vw 9vw;
     background-color: $footerColor;
 
     &__info {
@@ -371,5 +372,44 @@
 
     &__copyright {
         color: $copyrightColor;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    header,
+    .main-section {
+        margin: 2vw 5vw 0 5vw;
+    }
+
+    .gradient {
+        margin: 0 -5vw;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .main-section-column {
+        margin: 0 5vw;
+    }
+
+    .subscribe-gradient {
+        margin: 0 -5vw;
+    }
+
+    .sponsored {
+        // margin: 0 5vw;
+
+        & img {
+            max-width: 15vw;
+        }
     }
 }

@@ -18,7 +18,7 @@ button {
 
 .header,
 .main-section {
-  margin: 3.13rem 9.38rem 0 9.38rem;
+  margin: 3vw 9vw 0 9vw;
 }
 
 .list {
@@ -49,6 +49,11 @@ a {
 
 span {
   font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .button-oval {
@@ -91,7 +96,7 @@ span {
   justify-content: space-between;
 }
 .header__list {
-  width: 28.19rem;
+  width: 28vw;
   display: flex;
   justify-content: space-between;
   margin-top: 8.62px;
@@ -132,7 +137,7 @@ span {
 }
 
 .main-section {
-  margin-top: 5.56rem;
+  margin-top: 7vw;
 }
 .main-section__title {
   color: #0B132A;
@@ -196,7 +201,7 @@ span {
 
 .rating-section {
   margin-top: 6.44rem;
-  padding: 4.19rem 5.69rem 4.19rem 5.69rem;
+  padding: 4vw 5vw 4vw 5vw;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0px 3.13rem 5rem -3px rgba(13, 16, 37, 0.1019607843);
@@ -217,8 +222,8 @@ span {
 }
 
 .features-section {
-  margin-top: 9.38rem;
-  gap: 10.63rem;
+  margin-top: 7vw;
+  gap: 10vw;
 }
 .features-section__item {
   display: flex;
@@ -231,21 +236,21 @@ span {
 }
 
 .gradient {
-  margin: 3.75rem -9.38rem 0 -9.38rem;
-  padding-top: 6.25rem;
+  margin: 4vw -9vw 0 -9vw;
+  padding-top: 6vw;
   background: linear-gradient(180deg, #FAFAFA, #FAFAFA 3.13rem, #FBFBFB 3.13rem, #FBFBFB 28.13rem, #FCFCFC 28.13rem, #FCFCFC 53.13rem, #FDFDFD 53.13rem, #FDFDFD 78.13rem, #FFFFFF 78.13rem);
 }
 
 .pricing-section__block {
   display: flex;
   margin-top: 3.75rem;
-  gap: 3.13rem;
+  gap: 3vw;
 }
 .pricing-section__button {
   margin: 1.25rem 0 3.13rem 0;
 }
 .pricing-section__tarif {
-  padding: 5rem 3.75rem 0 4.38rem;
+  padding: 5vw 4vw 0 4vw;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
   gap: 1.25rem;
@@ -278,7 +283,7 @@ span {
 }
 
 .huge-global-section {
-  margin: 9.38rem 0;
+  margin: 9vw 0;
 }
 
 .review-section {
@@ -290,9 +295,8 @@ span {
 
 .review-blocks {
   display: flex;
-  gap: 3.13rem;
-  margin-top: 1.88rem;
-  margin-left: 9.38rem;
+  gap: 3vw;
+  margin-top: 2vw;
 }
 .review-blocks__block {
   border: 2px solid #DDDDDD;
@@ -308,7 +312,7 @@ span {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   padding-bottom: 1.88rem;
-  grid-template-columns: 3.13rem 8.88rem 1.88rem 3.13rem;
+  grid-template-columns: 3vw 9vw 2vw 3vw;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "img nm . rt" "img lc . rt";
 }
@@ -346,12 +350,12 @@ span {
 }
 
 .subscribe-gradient {
-  margin: 0 -150px;
-  background: linear-gradient(180deg, #ffffff, #ffffff 125px, #F8F8F8 125px, #F8F8F8 250px);
+  margin: 0 -9vw;
+  background: linear-gradient(180deg, #ffffff, #ffffff 7.8rem, #F8F8F8 7.8rem, #F8F8F8 15.6rem);
 }
 
 .little-section-subscribe {
-  margin: 0 150px;
+  margin: 0 9vw;
   padding: 4.38rem;
   border-radius: 10px;
   background-color: white;
@@ -374,7 +378,7 @@ span {
 .footer {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 4rem 9.38rem 6.25rem 9.38rem;
+  padding: 4vw 9vw 6vw 9vw;
   background-color: #F8F8F8;
 }
 .footer__info {
@@ -400,4 +404,32 @@ span {
 }
 .footer__copyright {
   color: #AFB5C0;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+  header,
+  .main-section {
+    margin: 2vw 5vw 0 5vw;
+  }
+  .gradient {
+    margin: 0 -5vw;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .main-section-column {
+    margin: 0 5vw;
+  }
+  .subscribe-gradient {
+    margin: 0 -5vw;
+  }
+  .sponsored img {
+    max-width: 15vw;
+  }
 }/*# sourceMappingURL=styles.css.map */
