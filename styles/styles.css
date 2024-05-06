@@ -18,7 +18,7 @@ button {
 
 .header,
 .main-section {
-  margin: 3vw 9vw 0 9vw;
+  margin: 3vw 8vw 0 8vw;
 }
 
 .list {
@@ -96,11 +96,13 @@ img {
   justify-content: space-between;
 }
 .header__list {
-  width: 28vw;
+  max-width: 50vw;
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   margin-top: 8.62px;
   font-weight: 400;
+  gap: 2vw;
+  justify-content: center;
 }
 .header__list a {
   color: #4F5665;
@@ -109,7 +111,7 @@ img {
   color: #F53838;
 }
 .header__login-link {
-  margin-right: 2.5rem;
+  margin-right: 2.5vw;
   color: #0B132A;
   font-weight: 500;
 }
@@ -125,7 +127,7 @@ img {
   color: #0B132A;
 }
 .logo__image {
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .span {
@@ -155,6 +157,7 @@ img {
 
 .main-section-row {
   display: flex;
+  align-items: center;
 }
 .main-section-row__block {
   display: flex;
@@ -236,7 +239,7 @@ img {
 }
 
 .gradient {
-  margin: 4vw -9vw 0 -9vw;
+  margin: 4vw -8vw 0 -8vw;
   padding-top: 6vw;
   background: linear-gradient(180deg, #FAFAFA, #FAFAFA 3.13rem, #FBFBFB 3.13rem, #FBFBFB 28.13rem, #FCFCFC 28.13rem, #FCFCFC 53.13rem, #FDFDFD 53.13rem, #FDFDFD 78.13rem, #FFFFFF 78.13rem);
 }
@@ -284,6 +287,10 @@ img {
 
 .huge-global-section {
   margin: 9vw 0;
+}
+
+.hugo-image {
+  max-width: 85vw;
 }
 
 .review-section {
@@ -349,8 +356,12 @@ img {
   line-height: 1.88rem;
 }
 
+.sponsored img {
+  max-width: 15vw;
+}
+
 .subscribe-gradient {
-  margin: 0 -9vw;
+  margin: 0 -8vw;
   background: linear-gradient(180deg, #ffffff, #ffffff 7.8rem, #F8F8F8 7.8rem, #F8F8F8 15.6rem);
 }
 
@@ -406,30 +417,79 @@ img {
   color: #AFB5C0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 1.4rem;
   }
   header,
   .main-section {
-    margin: 2vw 5vw 0 5vw;
+    margin: 2vw 2vw 0 2vw;
   }
   .gradient {
-    margin: 0 -5vw;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .main-section-column {
-    margin: 0 5vw;
+    margin: 0 -2vw;
   }
   .subscribe-gradient {
-    margin: 0 -5vw;
+    margin: 0 -2vw;
   }
-  .sponsored img {
-    max-width: 15vw;
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .main-section-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section-row__block {
+    align-items: center;
+  }
+  .main-section__description {
+    text-align: center;
+  }
+  .main-section__image {
+    margin: 2.5rem 0 0 0;
+  }
+  .pricing-section__tarif {
+    padding: 2vw 2vw 0 2vw;
+  }
+  .review-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-blocks__info {
+    grid-template-columns: 0;
+  }
+  .review-blocks__block {
+    margin: 0 15vw;
+  }
+  .little-section-buttons {
+    margin: 3.75rem 10vw 4.06rem 10vw;
+  }
+  .little-section__title {
+    font-size: 24px;
+  }
+  .little-section-subscribe {
+    padding: 2rem;
+  }
+  .little-section-subscribe:nth-child(2) {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__info {
+    margin-top: 4vw;
+    text-align: center;
+  }
+  .footer__info .logo {
+    justify-content: center;
+  }
+  .footer__text, .footer__copyright {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=styles.css.map */
