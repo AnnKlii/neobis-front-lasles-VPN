@@ -382,6 +382,18 @@
     }
 }
 
+.header__nav {
+    grid-area: nav;
+}
+
+.header logo {
+    grid-area: logo;
+}
+
+.header__login {
+    grid-area: login;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
         font-size: 20px;
@@ -407,6 +419,17 @@
     h2 {
         font-size: 24px;
         text-align: center;
+    }
+
+    .header {
+        display: grid;
+        grid-template-areas:
+            "logo logo login login"
+            ". . nav nav";
+
+        &__list {
+            padding-bottom: 20px;
+        }
     }
 
     .main-section-row {
@@ -482,6 +505,160 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0 auto;
+
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 2rem;
+
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .header {
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "login login"
+            "nav nav";
+
+        &__list {
+            padding-bottom: 20px;
+        }
+    }
+
+    .main-section {
+        margin: 2vw 4vw 0 4vw;
+
+        &__image {
+            margin-left: 0;
+        }
+    }
+
+    .main-section-row {
+        flex-direction: column;
+        text-align: center;
+
+        &__block {
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    .rating-section {
+        margin-top: 10vw;
+
+        &__item p:first-child {
+            font-size: 1rem;
+        }
+
+        &__item p:last-child {
+            font-size: 1rem;
+        }
+
+        &__item img {
+            display: none;
+        }
+    }
+
+    .main-section-column__title {
+        margin: 0;
+    }
+
+    .nav {
+        margin-left: 10vw;
+        text-align: center;
+    }
+
+    .main-section-column__info {
+        width: 80%;
+    }
+
+    .pricing-section__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__info {
+            grid-template-columns: 0;
+        }
+
+        &__block {
+            margin: 0 2vw;
+            padding: 0.7rem;
+        }
+    }
+
+    .little-section__title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .little-section-buttons {
+        margin: 2rem 0 2rem 3rem;
+
+        &__left {
+            display: none;
+        }
+    }
+
+    .subscribe-gradient,
+    .gradient {
+        margin: 0 -4vw;
+    }
+
+    .little-section-subscribe {
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0 2rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__link-title {
+            margin-bottom: 0rem;
+        }
+
+    }
+
+    .button-rectangle {
+        width: 150px;
+        height: 45px;
+    }
+
+    .button-oval {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+/*  burger menu starts */
+
 #burger,
 [for=burger] {
     display: none;
@@ -494,38 +671,14 @@
 
     .header__list {
         flex-direction: column;
-
-    }
-
-    .header__nav {
-        grid-area: nav;
-    }
-
-    .header logo {
-        grid-area: logo;
-    }
-
-    .header__login {
-        grid-area: login;
-    }
-
-    .header {
-        display: grid;
-        grid-template-areas:
-            "logo logo login login"
-            ". . nav nav";
-
-        &__list {
-            padding-bottom: 20px;
-        }
     }
 
     [for=burger] {
         display: block;
-        position: fixed;
+        position: absolute;
         width: 30px;
         text-align: center;
-        right: 20px;
+        right: -15px;
         top: 30px;
     }
 
@@ -538,7 +691,7 @@
         position: fixed;
         top: 0;
         background: $borderColor;
-        width: 40%;
+        width: 50%;
         user-select: none;
     }
 
@@ -556,14 +709,17 @@
     #burger:checked+[for=burger]::before {
         content: '⮾';
     }
+
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
-@keyframes show {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
+/*  burger menu ends */
